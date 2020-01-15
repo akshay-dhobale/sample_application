@@ -1,0 +1,9 @@
+<%@products.each do |product|%>
+  <tr>
+    <td><%= product.name%></td>
+    <td><%= product.model%></td>
+    <td><%= product.brand%></td>
+    <td><%= product.year%></td>
+    <td><%= link_to 'show', product_path(product.id)%></td>
+  </tr>
+<%end%>
